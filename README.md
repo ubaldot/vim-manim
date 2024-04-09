@@ -24,7 +24,7 @@ after. As an example of usage, you may consider the following:
 
 ```
 autocmd! User ManimPre echom "Manim renderer is being called..."
-autocmd! User ManimPost echom "Rendering successful!"
+autocmd! User ManimPost echom "Rendering done! Check eventual errors."
 ```
 
 See `:h autocommand` for more info on Vim autocommands.
