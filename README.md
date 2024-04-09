@@ -1,7 +1,9 @@
 # vim-manim
 
-A tiny plugin to render animations with [manim]() without leaving Vim. Written
-in Vim9.
+A tiny plugin to render animations with [manim](https://www.manim.community)
+without leaving Vim.
+
+Written in Vim9.
 
 ## Usage
 
