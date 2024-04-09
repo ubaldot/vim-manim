@@ -7,8 +7,10 @@ endif
 # Functions definition
 def Manim(scene: string, flag = g:manim_default_flag)
 
-  if exists("ManimPre")
-        doautocmd User ManimPre
+  var user_autocmds = execute('autocmd User')
+
+  if stridx(user_autocmds, "ManimPre") != -1
+      doautocmd User ManimPre
   endif
 
   var tmp = &l:makeprg
@@ -16,8 +18,8 @@ def Manim(scene: string, flag = g:manim_default_flag)
   make!
   &l:makeprg = tmp
 
-  if exists("ManimPost")
-        doautocmd User ManimPost
+  if stridx(user_autocmds, "ManimPost") != -1
+      doautocmd User ManimPost
   endif
 enddef
 
