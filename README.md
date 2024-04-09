@@ -39,8 +39,8 @@ actual rendering flags. For example, you could define:
 ```
 var manim_common_flags = '--fps 30 --disable_caching -v WARNING'
 g:manim_flags = {'low_quality': $"-pql {manim_common_flags}",
-'high_quality': $"-pqh -c ~/my_config.cfg {manim_common_flags}",
-'transparent': $"-pqh -c ~/my_config.cfg {manim_common_flags} --transparent"}
+                'high_quality': $"-pqh -c ~/my_config.cfg {manim_common_flags}",
+                'transparent': $"-pqh -c ~/my_config.cfg {manim_common_flags} --transparent"}
 ```
 
 > [!NOTE]
