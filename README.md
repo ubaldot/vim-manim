@@ -17,9 +17,9 @@ Type `:ManimCheck` to perform a check on your `manim` installation.
 The rendering output is stored in the quickfix list. Type `:copen` and
 `:cclose` to open/close the quickfix list. See `:h quickfix` for more info.
 
-Moreover, two events are provided: `ManimPre` and `ManimPost` that trigger
-actions before and after the actual `manim` rendered is executed. As an
-example of usage, you may consider the following:
+Two events `ManimPre` and `ManimPost` are also provided. The former triggers
+actions before the actual `manim` program is executed, whereas the latter just
+after. As an example of usage, you may consider the following:
 
 ```
 autocmd! User ManimPre echom "Manim rendered is being called..."
