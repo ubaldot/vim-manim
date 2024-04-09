@@ -7,7 +7,7 @@ endif
 # Functions definition
 def Manim(scene: string, flag = g:manim_default_flag)
 
-  if exists(#User#ManimPre)
+  if exists('#User#ManimPre')
       doautocmd User ManimPre
   endif
 
@@ -16,7 +16,7 @@ def Manim(scene: string, flag = g:manim_default_flag)
   make!
   &l:makeprg = tmp
 
-  if exists(#User#ManimPost)
+  if exists('#User#ManimPost')
       doautocmd User ManimPost
   endif
 
