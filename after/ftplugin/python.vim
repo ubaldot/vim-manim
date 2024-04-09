@@ -1,7 +1,11 @@
 vim9script
 
 if !exists("Manim")
-    command! -nargs=* -complete=customlist,ManimComplete Manim Manim(<f-args>)
+    command! -buffer -nargs=* -complete=customlist,ManimComplete Manim Manim(<f-args>)
+endif
+
+if !exists("ManimCheck")
+    command! -buffer ManimCheck execute "!manim checkhealth"
 endif
 
 # Functions definition
