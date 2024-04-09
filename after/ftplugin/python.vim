@@ -1,7 +1,7 @@
 vim9script
 
 if !exists("Manim")
-    command! -nargs=* -complete=customlist,ManimComplete Manim python.Manim(<f-args>)
+    command! -nargs=* -complete=customlist,ManimComplete Manim Manim(<f-args>)
 endif
 
 # Functions definition
