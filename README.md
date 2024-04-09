@@ -30,7 +30,8 @@ See `:h autocmd` for more info on Vim autocommands.
 
 ## Configuration
 
-There are only two variables: `g:manim_flags` and `g:manim_default_flag`.
+There are only two configuration variables: `g:manim_flags` and
+`g:manim_default_flag`.
 
 The former is a dictionary where the keys are tags and the values are the
 actual rendering flags. For example, you could define:
