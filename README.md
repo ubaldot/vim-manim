@@ -23,7 +23,7 @@ actions before the actual `manim` program is executed, whereas the latter just
 after. As an example of usage, you may consider the following:
 
 ```
-autocmd! User ManimPre echom "Manim rendered is being called..."
+autocmd! User ManimPre echom "Manim renderer is being called..."
 autocmd! User ManimPost echom "Rendering successful!"
 ```
 
