@@ -1,10 +1,7 @@
 # vim-manim
 
-A tiny plugin to render animations with [manim]() without leaving Vim.
-
-## Installation
-
-Install with any method that you like (`vim-plug`, etc.).
+A tiny plugin to render animations with [manim]() without leaving Vim. Written
+in Vim9.
 
 ## Usage
 
@@ -40,6 +37,14 @@ example, you could set the following:
 
 ```
 g:manim_default_flag = keys(g:manim_flags)[-1]
+```
+
+If such variables are not set by the user, the following default values are
+provided:
+
+```
+g:manim_flags = {'low_quality': $"-pql"}
+g:manim_default_flag = keys(g:manim_flags)[0]
 ```
 
 ## License
