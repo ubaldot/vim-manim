@@ -1,21 +1,18 @@
 vim9script
 
-# Manim stuff
-command! -nargs=* -complete=customlist,ManimComplete Manim Manim(<f-args>)
+if !exists("Manim")
+    command! -nargs=* -complete=customlist,ManimComplete Manim python.Manim(<f-args>)
+endif
 
 # Functions definition
-
 def Manim(scene: string, flag = g:manim_default_flag)
-  if has("mac")
-    exe "!osascript ~/QuickTimeClose.scpt"
-  endif
 
   if exists("ManimPre")
         doautocmd User ManimPre
   endif
 
   var tmp = &l:makeprg
-  &l:makeprg = $'manim {expand("%:t")} {scene} {g:manim_flags[flag]} --fps 30 --disable_caching -v WARNING --save_sections'
+  &l:makeprg = $'manim {expand("%:t")} {scene} {g:manim_flags[flag]}'
   make!
   &l:makeprg = tmp
 
@@ -65,7 +62,3 @@ enddef
 def ManimQualityCompletion(arglead: string): list<string>
     return keys(g:manim_flags)->filter($'v:val =~ "^{arglead}"')
 enddef
-
-# Jump to next-prev section
-nnoremap <buffer> <c-m> /\<self.next_section\><cr>
-nnoremap <buffer> <c-n> ?\<self.next_section\><cr>
