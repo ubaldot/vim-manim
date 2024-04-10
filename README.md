@@ -5,7 +5,9 @@
 </p>
 
 A tiny plugin to render animations with [manim](https://www.manim.community)
-without leaving Vim. Written in Vim9.
+without leaving Vim.
+
+Written in Vim9.
 
 ## Usage
 
