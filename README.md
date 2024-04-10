@@ -13,7 +13,7 @@ Written in Vim9.
 
 ### Commands
 
-This plugin provides only two commands: `:Manim` and `:ManimCheck`.
+This plugin provides only two commands:
 
 Type `:Manin` then hit `<tab>` to select a Scene. Then hit `<space>` and
 `<tab>` again to select a list of rendering flags.
