@@ -11,6 +11,8 @@ Written in Vim9.
 
 ## Usage
 
+### Commands
+
 This plugin provides only two commands: `:Manim` and `:ManimCheck`.
 
 Type `:Manin` then hit `<tab>` to select a Scene. Then hit `<space>` and
@@ -21,6 +23,8 @@ Type `:ManimCheck` to perform a check on your `manim` installation.
 The rendering output is stored in the quickfix list. Type `:copen` and
 `:cclose` to open/close the quickfix list. See `:h quickfix.txt` for more
 info.
+
+### Events
 
 Two events `ManimPre` and `ManimPost` are also provided. The former triggers
 actions before the actual `manim` program is executed, whereas the latter just
