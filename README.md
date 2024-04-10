@@ -1,9 +1,11 @@
 A tiny plugin to render animations with [manim](https://www.manim.community)
-without leaving Vim. Written in Vim9.
+without leaving Vim.
 
 <p align="center"
 <img src="/Demo.gif" width="60%" height="60%"
 </p>
+
+Written in Vim9.
 
 ## Usage
 
