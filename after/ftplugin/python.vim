@@ -17,7 +17,7 @@ def Manim(scene: string, flag = g:manim_default_flag)
 
   var tmp = &l:makeprg
   &l:makeprg = $'manim {expand("%:t")} {scene} {g:manim_flags[flag]}'
-  make!
+  silent! make!
   &l:makeprg = tmp
 
   if exists('#User#ManimPost')
