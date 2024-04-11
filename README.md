@@ -98,8 +98,8 @@ At this point, it is enough to run `:ManimDocs` to open the doc page.
 > [!Tip]
 >
 > Having your docs stored somewhere locally is obviously much faster to open
-> doc pages. Don't forget to update them when you install a newer version of
-> manim.
+> doc pages. But don't forget to update them when you install a newer version
+> of manim.
 
 ## License
 
