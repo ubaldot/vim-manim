@@ -37,26 +37,6 @@ autocmd! User ManimPost echom "Rendering done! Check eventual errors."
 
 See `:h autocommand` for more info on Vim autocommands.
 
-## What about docs?
-
-You don't really need a plugin for that. It is enough that you define your own
-command in e.g. your `.vimrc`, or, even better, in your
-`~/.vim/after/ftplugin/python.vim` file (replace `.vim` with `vimfiles` if you
-are using Windows). You can for example have something like the following:
-
-```
-    if has("mac")
-        command! ManimDocs silent :!open -a safari.app
-                \ ~/Documents/manimce-latest/index.html
-    elseif has("Linux")
-        command! ManimDocs silent :!xdg-open
-                \ https://docs.manim.community/en/stable/
-    else
-        command! ManimDocs silent :!start
-                \ ~/Somepath/manimce-0.18.0/index.html
-    endif
-```
-
 ## Configuration
 
 There are only two configuration variables: `g:manim_flags` and
@@ -92,6 +72,26 @@ g:manim_default_flag = keys(g:manim_flags)[0]
 ```
 
 Enjoy!
+
+## What about docs?
+
+You don't really need a plugin for that. It is enough that you define your own
+command in e.g. your `.vimrc`, or, even better, in your
+`~/.vim/after/ftplugin/python.vim` file (replace `.vim` with `vimfiles` if you
+are using Windows). You can for example have something like the following:
+
+```
+    if has("mac")
+        command! ManimDocs silent :!open -a safari.app
+                \ ~/Documents/manimce-latest/index.html
+    elseif has("Linux")
+        command! ManimDocs silent :!xdg-open
+                \ https://docs.manim.community/en/stable/
+    else
+        command! ManimDocs silent :!start
+                \ ~/Somepath/manimce-0.18.0/index.html
+    endif
+```
 
 ## License
 
