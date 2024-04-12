@@ -81,10 +81,10 @@ command in e.g. your `.vimrc`, or, even better, in your
 are using Windows). You can for example have something like the following:
 
 ```
-    if has("mac")
+    if executable("open")
         command! ManimDocs silent :!open -a safari.app
                 \ ~/Documents/manimce-latest/index.html
-    elseif has("Linux")
+    elseif executable("xdg-open")
         command! ManimDocs silent :!xdg-open
                 \ https://docs.manim.community/en/stable/
     else
@@ -93,7 +93,8 @@ are using Windows). You can for example have something like the following:
     endif
 ```
 
-At this point, it is enough to run `:ManimDocs` to open the doc page.
+Change the above according to your setup. Then, run `:ManimDocs` to open the
+doc page.
 
 > [!Tip]
 >
