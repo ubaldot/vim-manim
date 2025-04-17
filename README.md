@@ -15,7 +15,7 @@ Written in Vim9.
 
 This plugin provides only two commands:
 
-Type `:Manin` then hit `<tab>` to select a Scene. Then hit `<space>` and
+Type `:Manim` then hit `<tab>` to select a Scene. Then hit `<space>` and
 `<tab>` again to select a list of rendering flags.
 
 Type `:ManimCheck` to perform a check on your `manim` installation.
