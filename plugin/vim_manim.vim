@@ -9,10 +9,10 @@ if !has('vim9script') ||  v:version < 900
     finish
 endif
 
-if exists('g:vim_manim_loaded')
+if exists('g:loaded_vim_manim') && g:loaded_vim_manim
     finish
 endif
-g:vim_manim_loaded = 1
+g:loaded_vim_manim = true
 
 if !exists('g:manim_flags')
     g:manim_flags = {'low_quality': "-pql"}
