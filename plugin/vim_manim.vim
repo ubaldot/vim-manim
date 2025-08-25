@@ -9,9 +9,6 @@ if !has('vim9script') ||  v:version < 900
     finish
 endif
 
-if exists('g:loaded_vim_manim') && g:loaded_vim_manim
-    finish
-endif
 g:loaded_vim_manim = true
 
 if !exists('g:manim_flags')
