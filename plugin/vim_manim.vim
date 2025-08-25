@@ -1,4 +1,4 @@
-vim9script noclear
+vim9script
 
 # Render manim-ations in Vim
 # Maintainer: Ubaldo Tiberi
